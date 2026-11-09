@@ -1,6 +1,6 @@
 module github.com/hashicorp/terraform-provider-aws
 
-go 1.24.4
+go 1.26.0
 
 // Disable post-quantum X25519MLKEM768 key exchange mechanism
 // This causes errors with AWS Network Firewall
@@ -10,7 +10,7 @@ require (
 	github.com/ProtonMail/go-crypto v1.2.0
 	github.com/YakDriver/go-version v0.1.0
 	github.com/YakDriver/regexache v0.24.0
-	github.com/aws/aws-sdk-go-v2 v1.36.3
+	github.com/aws/aws-sdk-go-v2 v1.41.5
 	github.com/aws/aws-sdk-go-v2/config v1.29.15
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.68
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.30
@@ -59,7 +59,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/cloudsearch v1.27.2
 	github.com/aws/aws-sdk-go-v2/service/cloudtrail v1.49.1
 	github.com/aws/aws-sdk-go-v2/service/cloudwatch v1.45.1
-	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.50.1
+	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.65.0
 	github.com/aws/aws-sdk-go-v2/service/codeartifact v1.34.2
 	github.com/aws/aws-sdk-go-v2/service/codebuild v1.61.0
 	github.com/aws/aws-sdk-go-v2/service/codecatalyst v1.17.19
@@ -147,13 +147,13 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/kafkaconnect v1.23.3
 	github.com/aws/aws-sdk-go-v2/service/kendra v1.56.2
 	github.com/aws/aws-sdk-go-v2/service/keyspaces v1.18.1
-	github.com/aws/aws-sdk-go-v2/service/kinesis v1.35.1
+	github.com/aws/aws-sdk-go-v2/service/kinesis v1.43.5
 	github.com/aws/aws-sdk-go-v2/service/kinesisanalytics v1.26.4
 	github.com/aws/aws-sdk-go-v2/service/kinesisanalyticsv2 v1.32.4
 	github.com/aws/aws-sdk-go-v2/service/kinesisvideo v1.28.2
 	github.com/aws/aws-sdk-go-v2/service/kms v1.40.0
 	github.com/aws/aws-sdk-go-v2/service/lakeformation v1.41.4
-	github.com/aws/aws-sdk-go-v2/service/lambda v1.71.3
+	github.com/aws/aws-sdk-go-v2/service/lambda v1.88.5
 	github.com/aws/aws-sdk-go-v2/service/launchwizard v1.9.2
 	github.com/aws/aws-sdk-go-v2/service/lexmodelbuildingservice v1.29.2
 	github.com/aws/aws-sdk-go-v2/service/lexmodelsv2 v1.51.1
@@ -217,7 +217,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/route53recoveryreadiness v1.22.2
 	github.com/aws/aws-sdk-go-v2/service/route53resolver v1.35.4
 	github.com/aws/aws-sdk-go-v2/service/rum v1.24.2
-	github.com/aws/aws-sdk-go-v2/service/s3 v1.80.1
+	github.com/aws/aws-sdk-go-v2/service/s3 v1.97.3
 	github.com/aws/aws-sdk-go-v2/service/s3control v1.58.1
 	github.com/aws/aws-sdk-go-v2/service/s3outposts v1.29.2
 	github.com/aws/aws-sdk-go-v2/service/s3tables v1.4.0
@@ -265,7 +265,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/workspaces v1.57.0
 	github.com/aws/aws-sdk-go-v2/service/workspacesweb v1.27.2
 	github.com/aws/aws-sdk-go-v2/service/xray v1.31.5
-	github.com/aws/smithy-go v1.22.3
+	github.com/aws/smithy-go v1.24.2
 	github.com/beevik/etree v1.5.1
 	github.com/cedar-policy/cedar-go v0.1.0
 	github.com/davecgh/go-spew v1.1.1
@@ -302,9 +302,9 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/pquerna/otp v1.4.0
 	github.com/shopspring/decimal v1.4.0
-	golang.org/x/crypto v0.39.0
-	golang.org/x/text v0.26.0
-	golang.org/x/tools v0.33.0
+	golang.org/x/crypto v0.58.1-0.20261009181718-2f1f834330b2
+	golang.org/x/text v0.43.0
+	golang.org/x/tools v0.51.0
 	gopkg.in/dnaeon/go-vcr.v4 v4.0.2
 	gopkg.in/yaml.v3 v3.0.1
 	syreclabs.com/go/faker v1.2.3
@@ -317,23 +317,24 @@ require (
 	github.com/agext/levenshtein v1.2.2 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
-	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.6.10 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.34 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.34 // indirect
+	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.7.8 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.4.21 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.21 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.3 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/v4a v1.3.34 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/checksum v1.7.2 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/v4a v1.4.22 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.7 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/checksum v1.9.13 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/endpoint-discovery v1.10.15 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.15 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.18.15 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.13.21 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.19.21 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.30.1 // indirect
 	github.com/bgentry/speakeasy v0.1.0 // indirect
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc // indirect
-	github.com/cloudflare/circl v1.6.1 // indirect
+	github.com/cespare/xxhash/v2 v2.3.0 // indirect
+	github.com/cloudflare/circl v1.6.3 // indirect
 	github.com/evanphx/json-patch v0.5.2 // indirect
 	github.com/fatih/color v1.18.0 // indirect
-	github.com/go-logr/logr v1.4.2 // indirect
+	github.com/go-logr/logr v1.4.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/uuid v1.6.0 // indirect
@@ -363,19 +364,19 @@ require (
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/zclconf/go-cty v1.16.3 // indirect
-	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
+	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-sdk-go-v2/otelaws v0.61.0 // indirect
-	go.opentelemetry.io/otel v1.36.0 // indirect
-	go.opentelemetry.io/otel/metric v1.36.0 // indirect
-	go.opentelemetry.io/otel/trace v1.36.0 // indirect
-	golang.org/x/mod v0.25.0 // indirect
-	golang.org/x/net v0.41.0 // indirect
-	golang.org/x/sync v0.15.0 // indirect
-	golang.org/x/sys v0.33.0 // indirect
+	go.opentelemetry.io/otel v1.45.0 // indirect
+	go.opentelemetry.io/otel/metric v1.45.0 // indirect
+	go.opentelemetry.io/otel/trace v1.45.0 // indirect
+	golang.org/x/mod v0.41.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
+	golang.org/x/sync v0.24.0 // indirect
+	golang.org/x/sys v0.49.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20250218202821-56aae31c358a // indirect
-	google.golang.org/grpc v1.72.1 // indirect
-	google.golang.org/protobuf v1.36.6 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260817212433-ac3dfec99bb1 // indirect
+	google.golang.org/grpc v1.85.0-dev.0.20260825072537-93e31b48545e // indirect
+	google.golang.org/protobuf v1.36.12 // indirect
 )
 
 replace github.com/hashicorp/terraform-plugin-log => github.com/gdavison/terraform-plugin-log v0.0.0-20230928191232-6c653d8ef8fb
